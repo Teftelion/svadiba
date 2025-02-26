@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Doloman Pavljenko';
+    src: url('static/DolomanPavljenko.otf') format('truetype'); /* Укажите правильный путь к файлу */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f1f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+}
+.image {
+    width: 100%;
+    display: block;
+}
+.nav-dots {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: gray;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+.dot.active {
+    transform: scale(1.8);
+    background-color: black;
+}
+/* Стили для формы RSVP */
+.rsvp-container {
+    background-color: #d9d9d9;
+    padding:100px;
+    border-radius: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    font-family: 'Doloman Pavljenko', sans-serif;
+    color: #3f4a36;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #3f4a36;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #f5f1f0;
+    border-radius: 6px;
+    background-color: #f5f1f0;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6d7f5f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #5c6b50;
+}
+
+

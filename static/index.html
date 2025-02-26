@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="nav-dots">
+        <div class="dot" data-target="img1"></div>
+        <div class="dot" data-target="img2"></div>
+        <div class="dot" data-target="img3"></div>
+        <div class="dot" data-target="img4"></div>
+        <div class="dot" data-target="img5"></div>
+        <div class="dot" data-target="img6"></div>
+    </div>
+
+    <div class="container">
+        <img src="static/image2/1.jpg" id="img1" alt="Фото 1" class="image">
+        <img src="static/image2/2.jpg" id="img2" alt="Фото 2" class="image">
+        <img src="static/image2/3.jpg" id="img3" alt="Фото 3" class="image">
+        <img src="static/image2/4.jpg" id="img4" alt="Фото 4" class="image">
+        <img src="static/image2/5.jpg" id="img5" alt="Фото 5" class="image">
+    </div>
+
+    <div class="rsvp-container" id="img6">
+        <h2>Подтверждение участия</h2>
+        <form id="rsvp-form">
+            <label for="name">Имя *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Фамилия *</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="attendance">Будете ли вы присутствовать? *</label>
+            <select id="attendance" name="attendance" required>
+                <option value="Только на церемонии">Только на церемонии</option>
+                <option value="Только на банкете">Только на банкете</option>
+                <option value="На церемонии и банкете">На церемонии и банкете</option>
+                <option value="Нет">Нет</option>
+                <option value="Пока не знаю">Пока не знаю</option>
+            </select>
+
+            <label for="guests">Количество гостей:</label>
+            <input type="number" id="guests" name="guests" min="0" value="0">
+
+            <label for="diet">Есть ли у вас особые диетические ограничения?</label>
+            <input id="diet" name="diet" placeholder="Например, аллергия, вегетарианство и т. д." required>
+
+            <label for="comments">Комментарии или вопросы *</label>
+            <input id="comments" name="comments" required>
+
+            <button type="submit">Отправить</button>
+        </form>
+
+        <p id="response-message" style="text-align: center; color: green;"></p>
+    </div>
+
+    <div class="container">
+        <img src="static/image2/7.jpg" id="img7" alt="Фото 7" class="image">
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

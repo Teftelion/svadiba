@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Иван",
+        "surname": "Иванов",
+        "attendance": "На церемонии",
+        "guests": 2,
+        "diet": "Вегетарианец",
+        "comments": "Буду вовремя!"
+    },
+    {
+        "name": "qsqs",
+        "surname": "qsqs",
+        "attendance": "Только на банкете",
+        "guests": "2",
+        "diet": "qsqs",
+        "comments": "qsqs"
+    },
+    {
+        "name": "E",
+        "surname": "E",
+        "attendance": "Только на банкете",
+        "guests": "1",
+        "diet": "WE",
+        "comments": "WE"
+    },
+    {
+        "name": "Иванов",
+        "surname": "Владимир",
+        "attendance": "На церемонии и банкете",
+        "guests": "2",
+        "diet": "Апельсины",
+        "comments": "Мы с подарками!"
+    }
+]
